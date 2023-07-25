@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTRVM</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__wrap">
+            <div class="header__col">
+                <a href="tel:+78123250000" class="header__phone">+78123250000</a>
+            </div>
+
+            <div class="header__col">
+                <a href="" class="header__buk">скачать буклет</a>
+                <a href="" class="header__burg">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header2">
+    <a href="#" class="header__logo">
+        <img src="img/logo.svg" alt="">
+    </a>
+</div>
+<div class="menu-close"></div>
+<div class="menu">
+
+    <ul class="menu__list">
+        <li><a href="#loc">локация</a></li>
+        <li><a href="#arh">Архитектура</a></li>
+        <li><a href="#service">Инфраструктура</a></li>
+        <li><a href="#service">Сервис</a></li>
+        <li><a href="#places">Резиденции</a></li>
+        <li><a href="#">Планировки</a></li>
+    </ul>
+    <div class="menu__bot">
+        <div class="menu__left">
+            <a href="https://yard.ru/about" class="menu__team" target="_blank">О девелопере</a>
+        </div>
+
+        <a href="https://yard.ru/projects" class="menu__team" target="_blank">Другие проекты</a>
+    </div>
+</div>
+
+<section class="main scrollme">
+    <div class="main__wrap">
+        <div class="main__img">
+            <img class="animateme" data-when="span" data-from="0" data-to="1" data-scale="1.4" src="img/main-banner.jpg"
+                 alt="">
+        </div>
+        <div class="main__cont">
+            <div class="main__main">
+                <h1 class="main__title">
+                    <div class="main__nums">
+                        <span>6</span><span>0</span>
+                    </div>
+                    <div class="main__title-wrap">
+                        <span>л</span><span>о</span><span>т</span><span>о</span><span>в</span>
+                    </div>
+
+                </h1>
+                <p class="main__text">дом под звездным небосводом. <br> роскошная коллекция класса de luxe</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-block">
+    <div class="container">
+        <h2 class="about-block__title section-title">О проекте</h2>
+    </div>
+</section>
+
+<section class="location-block">
+    <div class="container">
+        <h2 class="location-block__title section-title">Локация</h2>
+
+        <div class="location-block__img-wrap">
+            <img class="location-block__img" src="img/map.svg" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="architecture-block">
+    <div class="container">
+        <h2 class="architecture-block__title section-title">Архитектура</h2>
+    </div>
+</section>
+
+<section class="lobby-block">
+    <div class="lobby-block__wrap">
+        <div class="container">
+            <h2 class="lobby-block__title section-title">Lobby</h2>
+            <div class="lobby-block__text">На входе вас встретит просторный лобби, в центре которого расположен дровяной
+                камин. Переливы текстурных элементов интерьера и теплый свет от камина создают в лобби атмосферу
+                особого, камерного уюта.
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="gallery fashionhouse" id="fashionhouse"
+     style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+    <div class="gallery__num">
+        <span class="gallery__currentnum">01</span> / <span class="gallery__totaltnum">06</span>
+    </div>
+    <div class="gallery__nav">
+        <div class="gallery__arrow gallery__arrow_left">
+            <svg width="30" height="8" viewBox="0 0 30 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                        d="M29.3536 4.35355C29.5488 4.15829 29.5488 3.84171 29.3536 3.64645L26.1716 0.464466C25.9763 0.269204 25.6597 0.269204 25.4645 0.464466C25.2692 0.659728 25.2692 0.976311 25.4645 1.17157L28.2929 4L25.4645 6.82843C25.2692 7.02369 25.2692 7.34027 25.4645 7.53553C25.6597 7.7308 25.9763 7.7308 26.1716 7.53553L29.3536 4.35355ZM0 4.5L29 4.5V3.5L0 3.5L0 4.5Z"
+                        fill="#0D1311"/>
+            </svg>
+        </div>
+        <div class="gallery__navlines"><span
+                class="active"></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="gallery__arrow gallery__arrow_right">
+            <svg width="30" height="8" viewBox="0 0 30 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                        d="M29.3536 4.35355C29.5488 4.15829 29.5488 3.84171 29.3536 3.64645L26.1716 0.464466C25.9763 0.269204 25.6597 0.269204 25.4645 0.464466C25.2692 0.659728 25.2692 0.976311 25.4645 1.17157L28.2929 4L25.4645 6.82843C25.2692 7.02369 25.2692 7.34027 25.4645 7.53553C25.6597 7.7308 25.9763 7.7308 26.1716 7.53553L29.3536 4.35355ZM0 4.5L29 4.5V3.5L0 3.5L0 4.5Z"
+                        fill="#0D1311"/>
+            </svg>
+        </div>
+    </div>
+    <div class="gallery__content scrollme" data-action="translateY" data-max="0.2" data-direction="-" data-k="0.15">
+        <div class="gallery__row" style="width: 600vw;">
+            <div class="gallery__slide fashionhouse__slide1 appearanim appearanim2 active animate">
+                <div class="gallery__title">
+                    Инфра&shy;структура
+                </div>
+                <div class="gallery__img">
+                    <div class="gallery__imganim">
+                        <img src="img/slider1.jpg" class="animateme" data-when="span" data-from="1" data-to="0"
+                             data-translatey="100"
+                             style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                    </div>
+                </div>
+                <div class="gallery__text">
+                    <div class="gallery__textin">
+                        В инфраструктуре ASTRVM продуман весь спектр условий, без которых немыслим современный,
+                        динамичный стиль жизни.
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__slide fashionhouse__slide2 ">
+                <div class="gallery__title">
+                    lobby
+                </div>
+                <div class="gallery__img">
+                    <div class="gallery__imganim">
+                        <img src="img/slider2.jpg" class="animateme" data-when="span" data-from="1" data-to="0"
+                             data-translatey="100"
+                             style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                    </div>
+                </div>
+                <div class="gallery__text">
+                    <div class="gallery__textin">
+                        На входе вас встретит просторный лобби, в центре которого расположен дровяной камин.
+                        Переливы текстурных элементов интерьера и теплый свет от камина создают в лобби атмосферу
+                        особого, камерного уюта.
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__slide fashionhouse__slide1">
+                <div class="gallery__title">
+                    PARKING
+                </div>
+                <div class="gallery__img fashionhouse__slide2-img1">
+                    <div class="gallery__imganim">
+                        <img src="img/slider3.jpg" class="animateme" data-when="span" data-from="1" data-to="0"
+                             data-translatey="100"
+                             style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                    </div>
+                </div>
+                <div class="gallery__text">
+                    <div class="gallery__textin">
+                        Дизайнерский паркинг на 105 машиномест с зарядками для электрокаров, автомобильным клинингом
+                        и зоной отдыха для водителей.
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__slide fashionhouse__slide3">
+                <div class="gallery__title">
+                    SPA
+                </div>
+                <div class="gallery__img">
+                    <div class="gallery__imganim">
+                        <img src="img/slider4.jpg" class="animateme" data-when="span" data-from="1" data-to="0"
+                             data-translatey="100"
+                             style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                    </div>
+                </div>
+                <div class="gallery__img">
+                    <div class="gallery__imganim">
+                        <img src="img/slider4-2.jpg" class="animateme" data-when="span" data-from="1" data-to="0"
+                             data-translatey="100"
+                             style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                    </div>
+                </div>
+                <div class="gallery__text">
+                    <div class="gallery__textin">
+                        На площади в 650 кв.м. помимо основной SPA-зоны, расположились индивидуальные массажные
+                        кабинеты,зал для занятий йоги, 23-метровый плавательный бассейн и гидромассажная ванная.
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__slide fashionhouse__slide4" data-nav="dark" data-num="dark">
+                <div class="gallery__title gallery__title_dark">
+                    fitness
+                </div>
+                <div class="gallery__img">
+                    <div class="gallery__imganim">
+                        <img src="img/slider5.jpg" class="animateme" data-when="span" data-from="1" data-to="0"
+                             data-translatey="100"
+                             style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                    </div>
+                </div>
+                <div class="gallery__text gallery__text_dark">
+                    <div class="gallery__textin">
+                        Провести кардио-тренировку в зале с тренажерами премиальной линейки или посетить зал
+                        групповых занятий
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__slide fashionhouse__slide1">
+                <div class="gallery__title">
+                    Двор-сад
+                </div>
+                <div class="gallery__img">
+                    <div class="gallery__imganim">
+                        <img src="img/slider6.jpg" class="animateme" data-when="span" data-from="1" data-to="0"
+                             data-translatey="100"
+                             style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                    </div>
+                </div>
+                <div class="gallery__text">
+                    <div class="gallery__textin">
+                        Элегантный внутренний двор-сад с гипоаллергенными растениями и стеклянным куполом,
+                        открывающим вид на озеленение в части подземного паркинга.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="service-block">
+    <div class="container">
+        <h2 class="service-block__title section-title">Сервис</h2>
+        <div class="service-block__subtitle">Премиальный сервис – Ваш неизменный сателлит</div>
+
+        <div class="service-block__content">
+            <div class="service-block__img-wrap">
+                <img class="service-block__img" src="img/service.jpg" alt="">
+            </div>
+
+            <div class="service-block__info">
+                <div class="service-block__text">Комфорт — естественное продолжение уникальных дизайнерских и
+                    архитек-турных решений. И вы сможете ощутить его в полной мере, ведь для этого в ASTRVM есть все
+                    необходимое:
+                </div>
+
+                <div class="service-block__list">
+                    <div class="service-block__list-item">
+                        <span class="service-block__list-item-count">1</span>
+                        <div class="service-block__list-item-text">Многоуровневая и надёжная система контроля доступа во
+                            всех лифтах, круглосуточная охрана и диспетчеризация помещений
+                        </div>
+                    </div>
+                    <div class="service-block__list-item">
+                        <span class="service-block__list-item-count">2</span>
+                        <div class="service-block__list-item-text">Круглосуточный индивидуальный консьерж-сервис</div>
+                    </div>
+                    <div class="service-block__list-item">
+                        <span class="service-block__list-item-count">3</span>
+                        <div class="service-block__list-item-text">Зона паркинга оснащена автомобильным клинингом</div>
+                    </div>
+                    <div class="service-block__list-item">
+                        <span class="service-block__list-item-count">4</span>
+                        <div class="service-block__list-item-text">Система «Умный дом»</div>
+                    </div>
+                    <div class="service-block__list-item">
+                        <span class="service-block__list-item-count">5</span>
+                        <div class="service-block__list-item-text">Келлеры для хранения любых вещей</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="private-block">
+    <div class="container">
+        <h2 class="private-block__title section-title">ASTRVM LUXURY <br>PRIVATE RESIDENCES</h2>
+    </div>
+</section>
+
+<section class="patio-block">
+    <div class="container">
+        <div class="patio-block__wrap">
+            <div class="patio-block__info">
+                <h2 class="patio-block__title section-title section-title_sm">Patio</h2>
+                <div class="patio-block__text">На первом этаже располагаются рези-денции с индивидуальными входами и
+                    зелёными патио — собственный приватный дворик с ограждением и садом. Это эксклюзивное решение
+                    позволяет
+                    создать особое предложе-ние для требовательных людей, ценящих индивидуальные проекты.
+                </div>
+            </div>
+            <div class="patio-block__img-wrap">
+                <img class="patio-block__img" src="img/patio.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="house-layout-block">
+    <div class="container">
+        <h2 class="house-layout-block__title section-title section-title_sm">Планировки квартир</h2>
+    </div>
+</section>
+
+<section class="places scrollme" id="places">
+    <div class="container">
+        <h2 class="places__title section-title">Отделка</h2>
+        <div class="places__text">Все квартиры предлагаются в черновой отделке для создания индивидуального дизайна, а
+            также с возможностью приобретения отделки с дизайнерской мебелью, продуманным освещением и аксессуарами от
+            наших партнеров.
+        </div>
+    </div>
+    <div class="swiper">
+        <div class="places-slider swiper-wrapper">
+            <a data-fancybox href="img/places/pl1.jpg" class="places-slider__img swiper-slide">
+                <img src="img/places/pl1.jpg" alt="">
+            </a>
+            <a data-fancybox href="img/places/pl2.jpg" class="places-slider__img swiper-slide">
+                <img src="img/places/pl2.jpg" alt="">
+            </a>
+            <a data-fancybox href="img/places/pl3.jpg" class="places-slider__img swiper-slide">
+                <img src="img/places/pl3.jpg" alt="">
+            </a>
+            <a data-fancybox href="img/places/pl4.jpg" class="places-slider__img swiper-slide">
+                <img src="img/places/pl4.jpg" alt="">
+            </a>
+            <a data-fancybox href="img/places/pl5.jpg" class="places-slider__img swiper-slide">
+                <img src="img/places/pl5.jpg" alt="">
+            </a>
+            <a data-fancybox href="img/places/pl6.jpg" class="places-slider__img swiper-slide">
+                <img src="img/places/pl6.jpg" alt="">
+            </a>
+            <a data-fancybox href="img/places/pl7.jpg" class="places-slider__img swiper-slide">
+                <img src="img/places/pl7.jpg" alt="">
+            </a>
+            <a data-fancybox href="img/places/pl8.jpg" class="places-slider__img swiper-slide">
+                <img src="img/places/pl8.jpg" alt="">
+            </a>
+            <a data-fancybox href="img/places/pl9.jpg" class="places-slider__img swiper-slide">
+                <img src="img/places/pl9.jpg" alt="">
+            </a>
+        </div>
+        <div class="places__nav">
+            <div class="places__prev"><img src="img/places-prev.svg" alt=""></div>
+            <div class="swiper-pagination"></div>
+            <div class="places__next"><img src="img/places-next.svg" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<section class="penthouse-block">
+    <div class="container">
+        <h2 class="penthouse-block__title section-title">Penthouses <br>Star collection</h2>
+
+        <div class="penthouse-block__wrap">
+
+            <div class="penthouse-block__img-wrap">
+                <img class="penthouse-block__img" src="img/penthouse-2.jpg" alt="">
+            </div>
+            <div class="penthouse-block__info">
+                <div class="penthouse-block__text">ВВ архитектуре и дизайне интерьеров пентхаусов была реализована идея
+                    «вилл на крыше», имеющих персональное имя и уникальное пространственное решение, а по структуре
+                    напоминающих современные роскошные Средиземноморские виллы.
+                </div>
+                <button class="penthouse-block__button">Sold Out</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="inzh">
+    <div class="container">
+        <h2 class="inzh__title section-title">Инженерия</h2>
+        <div class="inzh__wrap">
+            <div class="inzh__block animate__animated animate__fadeIn" style="order: 1;">
+                <span class="inzh__count">1</span>
+                <p class="inzh__descr">Система контроля протечки воды с автоматической блокировкой подачи</p>
+            </div>
+            <div class="inzh__block animate__animated animate__fadeIn animate__delay-05s" style="order: 3;">
+                <span class="inzh__count">2</span>
+                <p class="inzh__descr">Многоступенчатая система очистки воды до высшей категории качества питьевой</p>
+            </div>
+            <div class="inzh__block animate__animated animate__fadeIn animate__delay-1s" style="order: 5;">
+                <span class="inzh__count">3</span>
+                <p class="inzh__descr">Фильтрация воздуха фильтром тонкой очистки</p>
+            </div>
+            <div class="inzh__block" style="order: 7;">
+                <span class="inzh__count">4</span>
+                <p class="inzh__descr">Бесшумные и безопасные лифты бренда ThyssenKrupp Evolution</p>
+            </div>
+            <div class="inzh__block" style="order: 9;">
+                <span class="inzh__count">5</span>
+                <p class="inzh__descr">Энергосберегающие, дерево&shy;алюминиевые австрийские окна бренда Internorm</p>
+            </div>
+            <div class="inzh__block" style="order: 2;">
+                <span class="inzh__count">6</span>
+                <p class="inzh__descr">Системы противопожарной безопасности с выводом сигнала в диспетчерскую МЧС</p>
+            </div>
+            <div class="inzh__block" style="order: 4;">
+                <span class="inzh__count">7</span>
+                <p class="inzh__descr">Индивидуальная приточно&shy;вытяжная система с кондиционированием</p>
+            </div>
+            <div class="inzh__block" style="order: 6;">
+                <span class="inzh__count">8</span>
+                <p class="inzh__descr">Система снеготаяния для обслуживания террас в зимнее время</p>
+            </div>
+            <div class="inzh__block" style="order: 8;">
+                <span class="inzh__count">9</span>
+                <p class="inzh__descr">WI-Fi в каждой точке комплекса с усилителями в зонах SPA и паркинга
+                </p>
+            </div>
+        </div>
+        <div class="swiper">
+            <div class="inzh__prev"><img src="img/places-prev.svg" alt=""></div>
+            <div class="inzh__next"><img src="img/places-next.svg" alt=""></div>
+            <div class="inzh__slider swiper-wrapper">
+                <div class="swiper-slide inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Система контроля протечки воды с автоматической блокировкой подачи</p>
+                </div>
+                <div class="swiper-slide inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Многоступенчатая система очистки воды до высшей категории качества питьевой
+                    </p>
+                </div>
+                <div class="swiper-slide inzh__block ">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Фильтрация воздуха фильтром тонкой очистки</p>
+                </div>
+                <div class="swiper-slide inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Бесшумные и безопасные лифты бренда ThyssenKrupp Evolution</p>
+                </div>
+                <div class="swiper-slide inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Энергосберегающие, дерево&shy;алюминиевые австрийские окна бренда Internorm
+                    </p>
+                </div>
+                <div class="swiper-slide inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Системы противопожарной безопасности с выводом сигнала в диспетчерскую
+                        МЧС</p>
+                </div>
+                <div class="swiper-slide inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Индивидуальная приточно&shy;вытяжная система с кондиционированием</p>
+                </div>
+                <div class="swiper-slide inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Система снеготаяния для обслуживания террас в зимнее время</p>
+                </div>
+                <div class="swiper-slide inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">WI-Fi в каждой точке комплекса с усилителями в зонах SPA и паркинга
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="inzh__more">
+            <a href="#">
+                <span>оставить заявку/ </span>
+                <span>узнать стоимость/ </span>
+                <span>записаться на встречу</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="authors-main-block">
+    <div class="container">
+        <h2 class="authors-main-block__title section-title">Авторы проекта</h2>
+
+        <div class="authors-blockquote__wrap">
+            <blockquote class="authors-blockquote">
+                <p>Проект задуман и реализуется так, чтобы его решения в инфраструктуре и благоустройстве
+                    опередили ожидания от категории de luxe. Мы пригласили к сотрудничеству лучших специалистов и
+                    ожидаем, что ASTRVM станет достопримечательностью Крестовского</p>
+                <cite>Андрей Кошкин, глава Yard Group</cite>
+            </blockquote>
+        </div>
+
+        <div class="authors-main">
+            <div class="authors-main__img-block">
+                <img class="authors-main__img" src="img/author-1.jpg" alt="">
+                <img class="authors-main__img authors-main__img_second" src="img/author-1.jpg" alt="">
+            </div>
+
+            <div class="authors-main__wrap">
+                <span class="authors-main__title">YARD GROUP</span>
+                <span class="authors-main__subtitle">Девелопер</span>
+                <div class="authors-main__text">Основанная в 2015 году, компания Yard Group специализируется на
+                    строительстве недвижимости премиум-класса. Приверженец петербургских градостроительных традиций,
+                    девелопер Yard Group определяет свой стиль как «сдержанная роскошь вне времени», современная
+                    функциональная эстетика его объектов органично вписывается в богатый культурно-исторический
+                    контекст
+                    Северной столицы.
+                </div>
+            </div>
+        </div>
+
+        <div class="authors-main-subtext">Для воплощения амбициозной идеи клубного дома нового формата девелопер
+            привлёк целое созвездие имён
+        </div>
+
+        <div class="authors-list">
+            <div class="authors-list__item">
+                <img class="authors-list__img" src="img/author-2.jpg" alt="">
+
+                <div class="authors-list__info">
+                    <div class="authors-list__title">DBA-GROUP</div>
+                    <div class="authors-list__subtitle">Архитектура <br>фасадов</div>
+                </div>
+
+                <div class="authors-list__text">Фасады проектировало известное московское архитектурное бюро DBA- GROUP
+                    под руководством Владислава Андреева, с 2003 года реализовавшее более 700 проектов в России и за
+                    рубежом.
+                </div>
+            </div>
+
+            <div class="authors-list__item">
+                <img class="authors-list__img" src="img/author-3.jpg" alt="">
+
+                <div class="authors-list__info">
+                    <div class="authors-list__title">
+                        Hоtei-Russia / <br>The Svetozar Andreev <br>Architecture Studio
+                    </div>
+                    <div class="authors-list__subtitle">Дизайн, концепция пространств</div>
+                </div>
+
+                <div class="authors-list__text">Разработчиком концептуального пространства — планировочных решений,
+                    дизайна общественных зон — выступил петербуржец Светозар Андреев и основанная им
+                    студия Hоtei-Russia / The Svetozar Andreev Architecture Studio, пользующаяся широким международным
+                    признанием.
+                </div>
+            </div>
+        </div>
+
+        <p class="authors-copyright">Проектное финансирование <br>ПАО Сбербанк</p>
+    </div>
+</section>
+
+<section class="payments-block">
+    <div class="container">
+        <h2 class="payments-block__title section-title">Способы покупки</h2>
+
+        <div class="payments-block__list">
+            <div class="payments-block__list-item">
+                <p class="payments-block__list-title">100% оплата</p>
+                <p class="payments-block__list-text">Быстрый и выгодный способ покупки с максимально возможными
+                    скидками.</p>
+            </div>
+            <div class="payments-block__list-item">
+                <p class="payments-block__list-title">Ипотека</p>
+                <p class="payments-block__list-text">Ипотечные программы совместно с крупнейшими банками России.</p>
+            </div>
+            <div class="payments-block__list-item">
+                <p class="payments-block__list-title">Рассрочка</p>
+                <p class="payments-block__list-text">Суммы ежемесячных платежей согласовываются индивидуально.</p>
+            </div>
+        </div>
+
+        <button class="payments-block__callback" type="button">Получить консультацию</button>
+    </div>
+</section>
+
+<section class="partners-block">
+    <div class="container">
+        <h3 class="partners-block__title section-title">Наши партнеры <br> Private banking</h3>
+        <p class="partners-block__text">Мы сотрудничаем с ведущими российскими банками, а они рекомендуют нас своим
+            VIP-клиентам.</p>
+
+        <div class="partners-block__list">
+            <a href="#" class="partners-block__list-item">
+                <img class="partners-block__list-img" src="img/logo-1.svg" alt="">
+            </a>
+            <a href="#" class="partners-block__list-item">
+                <img class="partners-block__list-img" src="img/logo-2.svg" alt="">
+            </a>
+            <a href="#" class="partners-block__list-item">
+                <img class="partners-block__list-img" src="img/logo-3.svg" alt="">
+            </a>
+            <a href="#" class="partners-block__list-item">
+                <img class="partners-block__list-img" src="img/logo-4.svg" alt="">
+            </a>
+            <a href="#" class="partners-block__list-item">
+                <img class="partners-block__list-img" src="img/logo-5.svg" alt="">
+            </a>
+            <a href="#" class="partners-block__list-item">
+                <img class="partners-block__list-img" src="img/logo-6.svg" alt="">
+            </a>
+            <a href="#" class="partners-block__list-item">
+                <img class="partners-block__list-img" src="img/logo-7.svg" alt="">
+            </a>
+            <a href="#" class="partners-block__list-item">
+                <img class="partners-block__list-img" src="img/logo-8.svg" alt="">
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="contacts-block">
+    <div class="container">
+        <h2 class="contacts-block__title section-title">Contact us</h2>
+
+        <div class="contacts-block__wrap">
+            <div class="contacts-block__text">
+                <p>Чтобы записаться на показ или узнать больше о комплексе, оставьте Ваши контактные данные и мы
+                    свяжемся с Вами в ближайшее время.</p>
+            </div>
+
+            <form class="contacts-block__form">
+                <label class="contacts-block__form-field" for="contacts-name-field">
+                    <input class="contacts-block__form-input base-input"
+                           id="contacts-name-field"
+                           placeholder="Ваше имя"
+                           type="text"/>
+                </label>
+                <label class="contacts-block__form-field" for="contacts-phone-field">
+                    <input class="contacts-block__form-input base-input"
+                           id="contacts-phone-field"
+                           placeholder="Ваш телефон"
+                           type="text"/>
+                </label>
+                <button class="contacts-block__form-submit" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="team scrollme" id="team">
+    <div class="container">
+        <div class="team__slider">
+            <div class="swiper">
+                <div class="team-slider swiper-wrapper">
+                    <div class="team-slider__block swiper-slide">
+                        <div class="team__cont">
+                            <div class="team__img">
+                                <img src="img/partner-1.svg" alt="">
+                            </div>
+                            <div class="team__text">
+                                <p>На Крестовском острове в Санкт-Петербурге возводится один из самых респектабельных
+                                    клубных домов в городе — ASTRVM. Он обещает не только превратиться в новую
+                                    достопримечательность Крестовского острова..</p>
+                            </div>
+                            <a class="team__link" href="javascript:void(0)"></a>
+                        </div>
+                    </div>
+                    <div class="team-slider__block swiper-slide">
+                        <div class="team__cont">
+                            <div class="team__img">
+                                <img src="img/partner-2.png" alt="">
+                            </div>
+                            <div class="team__text">
+                                <p>На Крестовском острове в Санкт-Петербурге возводится один из самых респектабельных
+                                    клубных домов в городе — ASTRVM. Он обещает не только превратиться в новую
+                                    достопримечательность Крестовского острова..</p>
+                            </div>
+                            <a class="team__link" href="javascript:void(0)"></a>
+                        </div>
+                    </div>
+                    <div class="team-slider__block swiper-slide">
+                        <div class="team__cont">
+                            <div class="team__img">
+                                <img src="img/partner-3.svg" alt="">
+                            </div>
+                            <div class="team__text">
+                                <p>На Крестовском острове в Санкт-Петербурге возводится один из самых респектабельных
+                                    клубных домов в городе — ASTRVM. Он обещает не только превратиться в новую
+                                    достопримечательность Крестовского острова..</p>
+                            </div>
+                            <a class="team__link" href="javascript:void(0)"></a>
+                        </div>
+                    </div>
+                    <div class="team-slider__block swiper-slide">
+                        <div class="team__cont">
+                            <div class="team__img">
+                                <img src="img/partner-4.svg" alt="">
+                            </div>
+                            <div class="team__text">
+                                <p>На Крестовском острове в Санкт-Петербурге возводится один из самых респектабельных
+                                    клубных домов в городе — ASTRVM. Он обещает не только превратиться в новую
+                                    достопримечательность Крестовского острова..</p>
+                            </div>
+                            <a class="team__link" href="javascript:void(0)"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="places__nav">
+                    <div class="places__prev"><img src="img/places-prev.svg" alt=""></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="places__next"><img src="img/places-next.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="footer__address">
+                <div class="footer__address-wrap">
+                    <div class="footer__address-group">г. Санкт-Петербург,</div>
+                    <div class="footer__address-group">ул. Эсперова, д. 8, литера А</div>
+                    <div class="footer__address-group">
+                        <a class="footer__address-phone" href="tel:+78123250000">+78123250000</a>
+                    </div>
+                </div>
+
+                <a class="footer__links-item" href="">записаться на встречу</a>
+            </div>
+            <div class="footer__links">
+                <a class="footer__links-item" href="">политика конфиденциальности</a>
+                <a class="footer__links-item" href="">проектная декларация</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/jquery.scrollme.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
