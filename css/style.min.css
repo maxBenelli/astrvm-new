@@ -3286,7 +3286,46 @@ section {
 }
 
 .house-layout-block__title {
+    margin-bottom: 90px;
     color: #BABAB8;
+}
+
+.house-layout-block .places-slider__img {
+    width: auto;
+    height: auto;
+}
+
+
+.house-layout-block .places-slider__img img {
+    height: auto;
+}
+
+.house-layout-block .places-slider__img {
+    width: 648px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.house-layout-block .places-slider__img-big {
+    display: none;
+}
+
+.house-layout-block .places-slider__img-sm {
+    display: block;
+    width :auto !important;
+    height: 116px !important;
+}
+
+.house-layout-block .swiper-slide-active .places-slider__img-big {
+    display: block;
+    width: 100%;
+    max-width: 648px;
+}
+
+.house-layout-block .swiper-slide-active .places-slider__img-sm {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {

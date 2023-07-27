@@ -23,7 +23,7 @@ $(document).ready(function () {
     }, 1500);
 });
 
-var swiper = new Swiper(".places .swiper", {
+var swiper = new Swiper(".places:not(.house-layout-block) .swiper", {
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 124,
@@ -55,6 +55,42 @@ var swiper = new Swiper(".places .swiper", {
             slidesPerView: 3,
             loop: true,
             spaceBetween: 124
+        }
+    }
+});
+
+var swiper = new Swiper(".house-layout-block .swiper", {
+    slidesPerView: 'auto',
+    loop: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+    speed: 1400,
+    autoplay: {
+        delay: 4000,
+    },
+    navigation: {
+        nextEl: '.places .places__next',
+        prevEl: '.places .places__prev',
+    },
+    pagination: {
+        el: ".places .swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        992: {
+            slidesPerView: 'auto',
+            loop: true,
+            spaceBetween: 0
+        },
+        1200: {
+            slidesPerView: 'auto',
+            loop: true,
+            spaceBetween: 0
         }
     }
 });
