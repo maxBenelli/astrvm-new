@@ -1,17 +1,15 @@
+$.fn.setCursorPosition = function(pos) {
+    if ($(this).get(0).setSelectionRange) {
+        $(this).get(0).setSelectionRange(pos, pos);
+    } else if ($(this).get(0).createTextRange) {
+        var range = $(this).get(0).createTextRange();
+        range.collapse(true);
+        range.moveEnd('character', pos);
+        range.moveStart('character', pos);
+        range.select();
+    }
+};
 $(document).ready(function () {
-    new WOW({ mobile: false, }).init();
-
-    setTimeout(() => {
-        $('.popup-overlay').fadeIn();
-        $('html').css('overflow', 'hidden');
-    }, 3000);
-
-    $('.popup-block__close').on('click', function(e) {
-        e.preventDefault();
-        $('.popup-overlay').fadeOut();
-        $('html').css('overflow', 'unset');
-    });
-
     $(window).scrollTop(0);
     setTimeout(function () {
         $('.main__title-wrap').addClass('animate');
@@ -22,16 +20,25 @@ $(document).ready(function () {
         }, 2050)
     }, 1500);
 });
+$(window).scroll(function(){
+    var sticky = $('.header2'),
+        sticky2 = $('.header'),
+        scroll = $(window).scrollTop();
 
+    if (scroll >= 100) {
+        sticky.addClass('scrolled');
+        sticky2.addClass('scrolled');
+    }
+    else {
+        sticky.removeClass('scrolled');
+        sticky2.removeClass('scrolled');
+    }
+});
 var swiper = new Swiper(".places .swiper", {
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 124,
     centeredSlides: true,
-    speed: 1400,
-    autoplay: {
-        delay: 4000,
-    },
     navigation: {
         nextEl: '.places .places__next',
         prevEl: '.places .places__prev',
@@ -78,6 +85,37 @@ var swiper2 = new Swiper(".pent .swiper", {
             slidesPerView: 1,
             spaceBetween: 0
         },
+        992: {
+            slidesPerView: 3,
+            loop: true,
+            spaceBetween: 24
+        },
+        1200: {
+            slidesPerView: 3,
+            loop: true,
+            spaceBetween: 124
+        }
+    }
+});
+var swiper23 = new Swiper(".otd .swiper", {
+    slidesPerView: 'auto',
+    loop: true,
+    spaceBetween: 124,
+    centeredSlides: true,
+    navigation: {
+        nextEl: '.otd__slider .places__next',
+        prevEl: '.otd__slider .places__prev',
+    },
+    pagination: {
+        el: ".otd .swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
         576: {
             slidesPerView: 'auto',
             loop: true,
@@ -85,10 +123,10 @@ var swiper2 = new Swiper(".pent .swiper", {
         }
     }
 });
-
 var swiper233 = new Swiper(".team .swiper", {
     slidesPerView: 'auto',
-    spaceBetween: 15,
+    spaceBetween: 124,
+    centeredSlides: true,
     navigation: {
         nextEl: '.team__slider .places__next',
         prevEl: '.team__slider .places__prev',
@@ -101,16 +139,12 @@ var swiper233 = new Swiper(".team .swiper", {
         // when window width is >= 320px
         320: {
             slidesPerView: 1,
-        },
-        600: {
-            slidesPerView: 2,
-        },
-        900: {
-            slidesPerView: 3,
+            spaceBetween: 0
         },
         1200: {
-            slidesPerView: 4,
+            slidesPerView: 'auto',
             loop: true,
+            spaceBetween: 124
         }
     }
 });
@@ -134,7 +168,7 @@ var swiper4 = new Swiper(".inzh .swiper", {
     navigation: {
         nextEl: '.inzh__next',
         prevEl: '.inzh__prev',
-    }
+    },
 });
 $("body").on('click', '[href*="#"]', function (e) {
     var fixed_offset = 132;
@@ -156,7 +190,8 @@ $('.menu-close').on('click', function (e) {
     $('.menu-close').removeClass('active');
 });
 $(document).ready(function () {
-    $.getScript('js/hammer.min.js').done(function () {
+
+    $.getScript('/assets/js/hammer.min.js').done(function () {
         setSwipe();
     });
     var windowW = $(window).width();
@@ -358,4 +393,46 @@ $(document).ready(function () {
             });
         }
     }
+
+
+    $('.open-form').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').css('overflowY', 'hidden');
+        $('.overlay').addClass('overlay-active');
+    });
+
+    $('.add__close').on('click', function (e) {
+        $('html, body').css('overflowY', 'unset');
+        $('.overlay').removeClass('overlay-active');
+    });
+
+    $(document).on("af_complete", function (e, response) {
+        if(response.success == true){
+            $('html, body').css('overflowY', 'unset');
+            $('.overlay').removeClass('overlay-active');
+        }
+    });
+
+    $('.overlay').on('click', function (e) {
+        if (!(($(e.target).parents('.modalform').length) || ($(e.target).hasClass('modalform')))) {
+            e.preventDefault();
+            $('html, body').css('overflowY', 'unset');
+            $('.overlay').removeClass('overlay-active');
+        }
+    });
+
+    $(".modalform input[name=phone]").click(function(){
+        $(this).setCursorPosition(4);
+    }).mask("+7 (999) 999-99-99");
+
+    $(".modalform input[name=dob]").mask("99/99/9999");
+
+    $(".callme input[name=phone]").click(function(){
+        $(this).setCursorPosition(4);
+    }).mask("+7 (999) 999-99-99");
+
+
+    $('.callme-wrap>button').on('click', function(){
+        $(this).parent().addClass('active').find('.callme').toggle('slow');
+    });
 });

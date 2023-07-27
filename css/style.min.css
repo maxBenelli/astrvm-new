@@ -313,7 +313,6 @@ input:focus, button:focus {
 .gallery__arrow {
     width: 1.96429vw;
     height: 100%;
-    background: url(/css/../img/right.svg) center no-repeat;
     background-size: contain;
     -webkit-transition: background .6s, -webkit-transform .5s;
     transition: background .6s, -webkit-transform .5s;
@@ -495,7 +494,7 @@ input:focus, button:focus {
 .gallery__img img {
     display: block;
     -o-object-position: center;
-    object-position: center
+    object-fit: cover;
 }
 
 .gallery__imganim {
@@ -645,11 +644,7 @@ input:focus, button:focus {
         border-color: #fff !important
     }
 
-    .fashionhouse .gallery__arrow {
-        background-image: url(/css/../img/right.svg) !important
-    }
-
-    .fashionhouse .gallery__img {
+    .fashionhouse .fashionhouse .gallery__img {
         position: relative;
         width: 100%;
         height: 29.75vh !important;
@@ -1246,10 +1241,11 @@ section {
 .header__buk {
     font-weight: 400;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 14px;
     -webkit-text-decoration-line: underline;
-    text-decoration-line: underline;
-    color: rgba(13, 19, 17, 0.7)
+    text-decoration:none;
+    color: rgba(13, 19, 17, 0.7);
+    border-bottom: solid 1px;
 }
 
 .header__buk:hover {
@@ -1393,7 +1389,7 @@ section {
     text-transform: uppercase;
     color: #0D1311;
     text-decoration: none;
-    margin-bottom: 36px
+    margin-bottom: 33px
 }
 
 .menu__bot {
@@ -1416,13 +1412,15 @@ section {
     font-weight: 400;
     font-size: 23px;
     line-height: 28px;
+    line-height: 22px;
     text-transform: uppercase;
     color: rgba(13, 19, 17, 0.7);
-    text-decoration: none
+    text-decoration: none;
+    border-bottom: solid 1px transparent;
 }
 
 .menu__team:hover {
-    color: #0d1311
+    border-color: rgba(13, 19, 17, 0.7);
 }
 
 .menu__buk {
@@ -2183,6 +2181,167 @@ section {
 }
 
 /* NEW STYLES */
+
+.header__lang {
+    position: relative;
+    width:40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.header__lang span,
+.header__lang a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    transition: .5s linear;
+
+}
+.header__lang ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+    background: #fff;
+
+}
+.header__lang-menu > li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0;
+    left:0;
+}
+
+.header__lang-menu > li > span {
+    cursor: pointer;
+}
+
+.header__lang-menu > li:after {
+    content: ' ';
+    display: block;
+    width: 7px;
+    height: 6px;
+    margin-left: 5px;
+    background: url("../img/ico-arrow-bottom.svg") center no-repeat;
+}
+
+.header__lang-submenu {
+    position: absolute;
+    left: 0;
+    top:100%;
+    z-index: 5;
+    width:40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease-in-out;
+
+
+}
+.header__lang-submenu li {
+    position: relative;
+    top:0;
+    left:0;
+}
+.header__lang-submenu .header__lang-submenu {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 1px);
+    left: -webkit-calc(100% - 1px);
+}
+.header__lang li:hover > .header__lang-submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.popup-overlay {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.64);
+}
+
+.popup-overlay__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.popup-block {
+    flex-shrink: 0;
+    position: relative;
+    width: 100%;
+    max-width: 452px;
+    min-height: 160px;
+    height: 187px;
+    padding: 34px 30px 30px 114px;
+    background: #fff;
+}
+
+.popup-block__text {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.popup-block__subtext {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.popup-block__winner {
+    position: absolute;
+    top: 11px;
+    left: -51px;
+}
+
+.popup-block__close {
+    position: absolute;
+    right: 24px;
+    top: 21px;
+    display: block;
+    width: 31px;
+    height: 31px;
+    background: url("../img/popup-close.svg") center no-repeat;
+}
+@media screen and (max-width: 550px) {
+    .popup-block {
+        height: auto;
+        padding-right: 10px;
+    }
+
+    .popup-block__text,
+    .popup-block__subtext {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .popup-block__winner {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 110px;
+    }
+
+    .popup-block__close {
+        right: 15px;
+        top: 15px;
+        width: 24px;
+        height: 24px;
+    }
+}
 
 /* ABOUT BLOCK */
 .about-block {
