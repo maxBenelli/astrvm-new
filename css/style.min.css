@@ -3290,6 +3290,11 @@ section {
     color: #BABAB8;
 }
 
+.house-layout-block .swiper {
+    left: calc((100% - 100vw) / 2);
+    width: 100vw;
+}
+
 .house-layout-block .places-slider__img {
     width: auto;
     height: auto;
@@ -3309,6 +3314,8 @@ section {
 }
 
 .house-layout-block .places-slider__img-big {
+    opacity: 0;
+    visibility: hidden;
     display: none;
 }
 
@@ -3319,6 +3326,8 @@ section {
 }
 
 .house-layout-block .swiper-slide-active .places-slider__img-big {
+    opacity: 1;
+    visibility: visible;
     display: block;
     width: 100%;
     max-width: 648px;

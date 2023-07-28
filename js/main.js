@@ -6,7 +6,16 @@ $(document).ready(function () {
         $('html').css('overflow', 'hidden');
     }, 3000);
 
-    $('.popup-block__close').on('click', function(e) {
+
+    $('.popup-overlay').on('click', function(e) {
+        e.stopPropagation();
+    });
+
+    $('.popup-block').on('click', function(e) {
+        e.stopPropagation();
+    });
+
+    $('.popup-block__close, .popup-overlay').on('click', function(e) {
         e.preventDefault();
         $('.popup-overlay').fadeOut();
         $('html').css('overflow', 'unset');
